@@ -3,7 +3,7 @@
 #include<string>
 #include<vector>
 #include<map>
-#define push_back pb
+#define pb push_back 
 
 struct Book{
     std:: string title;
@@ -18,9 +18,12 @@ class Library {
 
     public:
         void addBook(const Book& book){
-            books.push_back(book);
+            books.pb(book);
             std:: cout<<"Book added successfully." << std:: endl;
         }
     
+};
+
+int main(){
 
 }
