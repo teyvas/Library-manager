@@ -19,6 +19,6 @@ The Library Management System is a software application designed to manage a col
 4. Exit the program by selecting option 6 from the menu.
 *Ensure that library.txt exists in the same directory to load the library data on start. The file will also be used to save the library data.*
 
-
-[Presentation's link](https://docs.google.com/presentation/d/1Fhk7YSHGQWPs4a_AJttf8622MfmWL6HNlNlvMBVhPIk/edit?usp=sharing "Presentation")<br>
+📖📖📖
+[Presentation's link](https://docs.google.com/presentation/d/1Fhk7YSHGQWPs4a_AJttf8622MfmWL6HNlNlvMBVhPIk/edit?usp=sharing "Presentation")
 📖📖📖
