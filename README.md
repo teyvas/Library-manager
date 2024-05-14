@@ -9,7 +9,7 @@ Objectives:
 * Error Handling: Handle common errors gracefully, such as attempting to update or remove a book that does not exist.<br>\
 ***
 Screenshots:
-1. Main Menu
+1. Main Menu <br>
   ![image](https://github.com/teyvas/Library-manager/assets/150505028/ec8b16a9-4b1a-44dd-b172-8348453aa502)<br>
 ***
 Usage Instructions:
