@@ -6,7 +6,7 @@ The Library Management System is a software application designed to manage a col
 * Efficient Book Management: Provide functionalities to add, update, remove, and display books in the library.
 * Persistent Storage: Implement mechanisms to save the library data to a file and load it from a file, ensuring data persistence across multiple sessions.
 * User-Friendly Interface: Create a simple and intuitive text-based interface for users to interact with the system.
-* Error Handling: Handle common errors gracefully, such as attempting to update or remove a book that does not exist.<br>\
+* Error Handling: Handle common errors gracefully, such as attempting to update or remove a book that does not exist.<br>
 ***
 # Screenshots:
 1. Main Menu <br>
@@ -20,5 +20,5 @@ The Library Management System is a software application designed to manage a col
 *Ensure that library.txt exists in the same directory to load the library data on start. The file will also be used to save the library data.*
 
 
-[Presentation's link](https://docs.google.com/presentation/d/1Fhk7YSHGQWPs4a_AJttf8622MfmWL6HNlNlvMBVhPIk/edit?usp=sharing "Presentation")
+[Presentation's link](https://docs.google.com/presentation/d/1Fhk7YSHGQWPs4a_AJttf8622MfmWL6HNlNlvMBVhPIk/edit?usp=sharing "Presentation")<br>
 📖📖📖
