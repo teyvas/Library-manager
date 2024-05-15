@@ -26,27 +26,27 @@ public:
     }
 
     // Function to update details of a book
-    void updateBook(const string& title, const Book& updatedBook) {
+    void updateBook(const string& isbn, const Book& updatedBook) {
         for (int i = 0; i < books.size(); ++i) {
-            if (books[i].isbn == title) {
+            if (books[i].isbn == isbn) {
                 books[i] = updatedBook;
                 cout << "Book details updated successfully." << endl;
                 return;
             }
         }
-        cout << "Book with title " << title << " not found." << endl;
+        cout << "Book with isbn " << isbn << " not found." << endl;
     }
 
     // Function to remove a book from the library
-    void removeBook(const string& title) {
+    void removeBook(const string& isbn) {
         for (auto it = books.begin(); it != books.end(); ++it) {
-            if (it->title == title) {
+            if (it->isbn == isbn) {
                 books.erase(it);
                 cout << "Book removed successfully." << endl;
                 return;
             }
         }
-        cout << "Book with Title " << title << " not found." << endl;
+        cout << "Book with isbn " << isbn << " not found." << endl;
     }
 
     // Function to display all books in the library
@@ -63,10 +63,10 @@ public:
     
     // Function to save library to a file
     void saveToFile(const string& filename) {
-        ofstream outFile(filename);
-        if (outFile.is_open()) {
+        ofstream FileOut(filename);
+        if (FileOut.is_open()) {
             for (const auto& book : books) {
-                outFile << book.title << "," << book.author << "," << book.year << "," << book.isbn << endl;
+                FileOut << book.title << "," << book.author << "," << book.year << "," << book.isbn << endl;
             }
             cout << "Library saved to file." << endl;
         } else {
@@ -77,23 +77,24 @@ public:
 
     // Function to load library from a file
     void loadFromFile(const string& filename) {
-    ifstream inFile(filename);
-    if (inFile.is_open()) {
+    ifstream FileIn(filename);
+    if (FileIn.is_open()) {
         books.clear(); // Clear existing books
         string line;
-        while (getline(inFile, line)) {
+        while (getline(FileIn, line)) {
             stringstream ss(line);
-            string title, author, isbn;
+            string title, author, yearStr, isbn;
             int year;
             getline(ss, title, ',');
             getline(ss, author, ',');
-            inFile >> year;
-            inFile.ignore(); // Ignore the comma
+            getline(ss, yearStr, ',');
             getline(ss, isbn);
+            year = stoi(yearStr); // Convert year string to integer
             books.push_back({title, author, year, isbn});
         }
         cout << "Library loaded from file." << endl;
-    } else {
+    } 
+    else {
         cout << "Unable to open file." << endl;
     }
 }
@@ -164,10 +165,10 @@ int main() {
                 break;
             }
             case 3: {
-                string isbn;
+                string title;
                 cout << "Enter Title of the book to remove: ";
-                cin >> isbn;
-                library.removeBook(isbn);
+                cin >> title;
+                library.removeBook(title);
                 break;
             }
             case 4:
