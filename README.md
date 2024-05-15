@@ -16,7 +16,7 @@ The Library Management System is a software application designed to manage a col
 1. Compile the code using a C++ compiler, for example: g++ -o library_management library_management.cpp.
 2. Run the program: ./library_management.
 3. Interact with the menu to manage the library by adding, updating, removing, displaying, and saving books.
-4. Exit the program by selecting option 6 from the menu.
+4. Exit the program by selecting option 6 from the menu.<br>
 *Ensure that library.txt exists in the same directory to load the library data on start. The file will also be used to save the library data.*
 
 📖📖📖
