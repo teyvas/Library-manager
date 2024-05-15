@@ -19,7 +19,7 @@ Data Structure: <br>
 
 * vector<Book> is used to store the collection of books.
 * struct Book defines the attributes of a book (title, author, year, ISBN).
-<br><br>
+
 Algorithms:
 
 * Add Book: Appends a new book to the books vector.
