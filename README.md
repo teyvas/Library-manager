@@ -1,8 +1,8 @@
-# Project Title: Library Management System 📚📚📚
+# Library Management System 📚📚📚
 Description:
 The Library Management System is a software application designed to manage a collection of books in a library. It allows users to add new books, update existing book details, remove books, display all books, and save the library data to a file. Additionally, the system can load book data from a file when it starts, ensuring that the library collection is preserved between sessions.<br>
 ***
-# Objectives:
+**Objectives**:
 * Efficient Book Management: Provide functionalities to add, update, remove, and display books in the library.
 * Persistent Storage: Implement mechanisms to save the library data to a file and load it from a file, ensuring data persistence across multiple sessions.
 * User-Friendly Interface: Create a simple and intuitive text-based interface for users to interact with the system.
@@ -17,8 +17,9 @@ The Library Management System is a software application designed to manage a col
 **Algorithms and Data Structures**<br>
 Data Structure: <br>
 
-vector<Book> is used to store the collection of books. <br>
-struct Book defines the attributes of a book (title, author, year, ISBN).<br>
+* vector<Book> is used to store the collection of books.
+* struct Book defines the attributes of a book (title, author, year, ISBN).
+<br><br>
 Algorithms:
 
 * Add Book: Appends a new book to the books vector.
